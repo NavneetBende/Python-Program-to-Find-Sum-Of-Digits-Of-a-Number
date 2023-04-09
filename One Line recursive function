@@ -1,0 +1,6 @@
+def sumDigits(n):
+    return 0 if n == 0 else int(n % 10) + sumDigits(int(n / 10)) 
+   
+# Driver code
+n = int(input("Enter the number: "))
+print(sumDigits(n))
