@@ -1,0 +1,7 @@
+num, sum = 12345, 0
+
+for i in range(len(str(num))):
+    # ord methods helps with ASCII
+    sum += ord(str(num)[i]) - 48
+
+print(sum)
