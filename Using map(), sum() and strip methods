@@ -1,0 +1,17 @@
+def getSum(n):
+    
+    # convert into string
+    num_string = str(n)
+    
+    # fetch each individual char using strip method
+    # find comparable int and store it in map
+    # covert it into list
+    list_of_number = list(map(int, num_string.strip()))
+    
+    print(list_of_number)
+    
+    # sum function returns the sum of all items in list
+    return sum(list_of_number)
+   
+n = int(input("Enter the number: "))
+print(getSum(n))
